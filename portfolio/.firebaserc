@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ninoos-portfolio": {
+      "hosting": {
+        "portfolio": [
+          "ninoos-portfolio"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ninoos-portfolio"
+  }
+}
