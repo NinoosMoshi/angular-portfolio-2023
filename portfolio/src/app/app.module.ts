@@ -4,22 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AngularFireModule } from '@angular/fire/compat';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
-import { provideAuth,getAuth } from '@angular/fire/auth';
-// import { provideFirestore,getFirestore } from '@angular/fire/firestore'
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavMenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // AngularFireModule.initializeApp(environment.firebase),
-    // provideFirebaseApp(() => initializeApp(environment.firebase)),
-    // provideAuth(() => getAuth()),
-    // provideFirestore(() => getFirestore())
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
